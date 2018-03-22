@@ -20,14 +20,8 @@
         <app-header></app-header>
         <main>
             <div class="container">
-                <div class="text-center">
-                    <img src="/static/images/logo.png" alt="VueJS Logo">
-                    <h1>{{ welcome }}</h1>
-                   </br>
-                </div>
-                <div class="center"> <news-list></newslist></div>
-                 
-            </div>
+                <!-- component matched by the route will render here -->
+        <router-view></router-view>
         </main>
         <app-footer></app-footer>
     </div>
