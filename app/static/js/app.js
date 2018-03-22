@@ -70,7 +70,7 @@ id="search" class="form-control mb-2 mr-sm-2" placeholder="Enter search term her
 `,
 created: function() {
     let self=this;
-    fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=521b04c21a61484aa1b05036f5b202f0')
+    fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=<API KEY>')
     .then(function(response) 
     {
  return response.json();
@@ -92,7 +92,7 @@ created: function() {
  methods: {
  searchNews: function() {
  let self = this;
- fetch('https://newsapi.org/v2/everything?q='+self.searchTerm + '&language=en&apiKey=521b04c21a61484aa1b05036f5b202f0')
+ fetch('https://newsapi.org/v2/everything?q='+self.searchTerm + '&language=en&apiKey=<API KEY>')
  .then(function(response) 
  {
  return response.json();
